@@ -1,0 +1,32 @@
+{
+    "name": "slowlyo/owl-terminal",
+    "alias": "命令行工具",
+    "description": "方便在页面上执行一些命令~",
+    "type": "library",
+    "keywords": ["owl-admin", "extension"],
+    "homepage": "https://github.com/slowlyo/owl-terminal",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "slowlyo",
+            "email": "slowlyo_email@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "slowlyo/owl-admin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slowlyo\\OwlTerminal\\": "src/"
+        }
+    },
+    "extra": {
+        "owl-admin": "Slowlyo\\OwlTerminal\\OwlTerminalServiceProvider",
+        "laravel": {
+            "providers": [
+                "Slowlyo\\OwlTerminal\\OwlTerminalServiceProvider"
+            ]
+        }
+    }
+}
