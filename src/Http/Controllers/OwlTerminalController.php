@@ -4,7 +4,7 @@ namespace Slowlyo\OwlTerminal\Http\Controllers;
 
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
-use Slowlyo\OwlAdmin\Libs\Composer;
+use Slowlyo\OwlAdmin\Support\Composer;
 use Illuminate\Support\Facades\Cache;
 use Symfony\Component\Process\Process;
 use Illuminate\Support\Facades\Artisan;
